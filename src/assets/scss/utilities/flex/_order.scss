@@ -1,0 +1,14 @@
+.order {
+  &-first {
+    order: -9999;
+  }
+  &-last {
+    order: 9999;
+  }
+
+  @for $idx from 0 through 16 {
+    &-#{$idx} {
+      order: $idx;
+    }
+  }
+}

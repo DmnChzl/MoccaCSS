@@ -1,0 +1,50 @@
+@use "sass:math";
+
+.w {
+  &-auto {
+    width: auto;
+  }
+  &-view {
+    width: 100vw;
+  }
+  &-1\/1 {
+    width: 100%;
+  }
+
+  @for $idx from 0 through 64 {
+    $width: $idx * 0.25;
+
+    &-#{$idx} {
+      width: #{$width}rem;
+    }
+  }
+
+  @for $b from 2 through 6 {
+    @for $a from 1 through $b - 1 {
+      $width: math.div($a, $b) * 100;
+
+      &-#{$a}\/#{$b} {
+        width: #{$width} + "%";
+      }
+    }
+  }
+}
+
+.min-w {
+  @for $idx from 0 through 64 {
+    $width: $idx * 0.25;
+
+    &-#{$idx} {
+      min-width: #{$width}rem;
+    }
+  }
+}
+.max-w {
+  @for $idx from 0 through 64 {
+    $width: $idx * 0.25;
+
+    &-#{$idx} {
+      max-width: #{$width}rem;
+    }
+  }
+}

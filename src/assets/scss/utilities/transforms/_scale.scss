@@ -1,0 +1,16 @@
+.scale {
+  @for $idx from 0 through 6 {
+    $key: $idx * 25;
+    $value: $key * 0.01;
+
+    &-#{$key} {
+      transform: scale($value);
+    }
+    &-x-#{$key} {
+      transform: scaleX($value);
+    }
+    &-y-#{$key} {
+      transform: scaleY($value);
+    }
+  }
+}

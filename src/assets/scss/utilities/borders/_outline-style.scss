@@ -1,0 +1,21 @@
+.outline {
+  &-hidden {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+
+    &:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+  }
+
+  @each $style in hidden, solid, dashed, dotted {
+    &-#{$style} {
+      outline-style: $style;
+
+      &:focus {
+        outline-style: $style;
+      }
+    }
+  }
+}

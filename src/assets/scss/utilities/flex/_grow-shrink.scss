@@ -1,0 +1,15 @@
+.flex {
+  &-grow {
+    flex-grow: 1;
+  }
+  &-nogrow {
+    flex-grow: 0;
+  }
+
+  &-shrink {
+    flex-shrink: 1;
+  }
+  &-noshrink {
+    flex-shrink: 0;
+  }
+}

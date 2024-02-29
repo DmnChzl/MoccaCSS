@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+# Initialize the Conventional Commit pattern
+conventional_commit_pattern="^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([a-z \-]+\))?!?: .+$"
+
+# Get the commit message
+commit_message=$(cat "$1")
+
+# Check the message, if it matches the pattern, everything is good
+if [[ "$commit_message" =~ $conventional_commit_pattern ]]; then
+   echo "\033[32mThe commit message follows predefined conventions...\033[0m"
+   exit 0
+fi
+
+# Else, it's not a Conventional Commit...
+# Show an example and the link to the spec, then return as an error
+echo "\033[31mThe commit message doesn't respect standards!\033[0m"
+echo "Here is an example of a valid message:"
+echo "    feat(connect): add connection button"
+echo "\033[33mFor more details: https://www.conventionalcommits.org\033[0m"
+exit 1

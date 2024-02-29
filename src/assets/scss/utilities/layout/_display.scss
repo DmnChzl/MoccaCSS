@@ -1,0 +1,8 @@
+.hidden {
+  display: none;
+}
+@each $display in inline, block, inline-block, flex, inline-flex, table, inline-table, grid, inline-grid, contents {
+  .#{$display} {
+    display: $display;
+  }
+}

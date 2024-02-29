@@ -1,0 +1,79 @@
+@use "sass:map";
+
+.radius {
+  &-max {
+    border-radius: 9999px;
+  }
+
+  @for $idx from 0 through 4 {
+    $radius: $idx * 2;
+
+    &-#{$radius} {
+      border-radius: #{$radius}px;
+    }
+  }
+}
+
+.radius-top {
+  &-max {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+
+  @for $idx from 0 through 4 {
+    $radius: $idx * 2;
+
+    &-#{$radius} {
+      border-top-left-radius: #{$radius}px;
+      border-top-right-radius: #{$radius}px;
+    }
+  }
+}
+
+.radius-right {
+  &-max {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  @for $idx from 0 through 4 {
+    $radius: $idx * 2;
+
+    &-#{$radius} {
+      border-top-right-radius: #{$radius}px;
+      border-bottom-right-radius: #{$radius}px;
+    }
+  }
+}
+
+.radius-bottom {
+  &-max {
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  @for $idx from 0 through 4 {
+    $radius: $idx * 2;
+
+    &-#{$radius} {
+      border-bottom-left-radius: #{$radius}px;
+      border-bottom-right-radius: #{$radius}px;
+    }
+  }
+}
+
+.radius-left {
+  &-max {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  @for $idx from 0 through 4 {
+    $radius: $idx * 2;
+
+    &-#{$radius} {
+      border-top-left-radius: #{$radius}px;
+      border-bottom-left-radius: #{$radius}px;
+    }
+  }
+}

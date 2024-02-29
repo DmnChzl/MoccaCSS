@@ -1,0 +1,75 @@
+@import "../breakpoints";
+
+@mixin each-margin {
+  &-auto {
+    margin: auto;
+  }
+
+  &x-auto {
+    @each $position in left, right {
+      margin-#{$position}: auto;
+    }
+  }
+  &y-auto {
+    @each $position in top, bottom {
+      margin-#{$position}: auto;
+    }
+  }
+
+  &t-auto {
+    margin-top: auto;
+  }
+  &r-auto {
+    margin-right: auto;
+  }
+  &b-auto {
+    margin-bottom: auto;
+  }
+  &l-auto {
+    margin-left: auto;
+  }
+
+  @for $idx from 0 through 16 {
+    $margin: $idx * 0.25;
+
+    &-#{$idx} {
+      margin: #{$margin}rem;
+    }
+
+    &x-#{$idx} {
+      @each $position in left, right {
+        margin-#{$position}: #{$margin}rem;
+      }
+    }
+    &y-#{$idx} {
+      @each $position in top, bottom {
+        margin-#{$position}: #{$margin}rem;
+      }
+    }
+
+    &t-#{$idx} {
+      margin-top: #{$margin}rem;
+    }
+    &r-#{$idx} {
+      margin-right: #{$margin}rem;
+    }
+    &b-#{$idx} {
+      margin-bottom: #{$margin}rem;
+    }
+    &l-#{$idx} {
+      margin-left: #{$margin}rem;
+    }
+  }
+}
+
+.m {
+  @include each-margin;
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:m {
+      @include each-margin;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.sqrt {
+  @for $idx from 0 through 64 {
+    $value: $idx * 0.25;
+
+    &-#{$idx} {
+      width: #{$value}rem;
+      height: #{$value}rem;
+    }
+  }
+}

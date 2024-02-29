@@ -1,0 +1,17 @@
+.line {
+  &-extra-small {
+    line-height: 1.25;
+  }
+  &-small {
+    line-height: 1.375;
+  }
+  &-medium {
+    line-height: 1.5;
+  }
+  &-large {
+    line-height: 1.625;
+  }
+  &-extra-large {
+    line-height: 1.75;
+  }
+}

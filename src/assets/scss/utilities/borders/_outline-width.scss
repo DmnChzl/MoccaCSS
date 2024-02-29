@@ -1,0 +1,15 @@
+.outline {
+  outline-width: 1px;
+
+  @for $idx from 0 through 4 {
+    $width: $idx * 2;
+
+    &-#{$width} {
+      outline-width: #{$width}px;
+
+      &:focus {
+        outline-width: #{$width}px;
+      }
+    }
+  }
+}

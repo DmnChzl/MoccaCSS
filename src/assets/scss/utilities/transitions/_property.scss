@@ -1,0 +1,41 @@
+$ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+
+@mixin transition-ease-in-out {
+  transition-timing-function: $ease-in-out;
+  transition-duration: 125ms;
+}
+
+.transition {
+  @include transition-ease-in-out;
+  transition-property: border-radius, border-width, color, background-color, border-color, fill, stroke, opacity,
+    box-shadow, transform;
+
+  &-none {
+    transition-property: none;
+  }
+  &-all {
+    @include transition-ease-in-out;
+    transition-property: all;
+  }
+  &-borders {
+    @include transition-ease-in-out;
+    transition-property: border-radius, border-width, border-top-width, border-right-width, border-bottom-width,
+      border-left-width;
+  }
+  &-colors {
+    @include transition-ease-in-out;
+    transition-property: color, background-color, border-color, fill, stroke;
+  }
+  &-opacity {
+    @include transition-ease-in-out;
+    transition-property: opacity;
+  }
+  &-shadow {
+    @include transition-ease-in-out;
+    transition-property: box-shadow;
+  }
+  &-transform {
+    @include transition-ease-in-out;
+    transition-property: transform;
+  }
+}

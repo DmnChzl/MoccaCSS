@@ -1,0 +1,7 @@
+.text {
+  @each $decoration in underline, line-through, overline {
+    &-#{$decoration} {
+      text-decoration-line: $decoration;
+    }
+  }
+}

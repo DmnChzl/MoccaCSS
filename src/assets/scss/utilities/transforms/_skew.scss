@@ -1,0 +1,12 @@
+.skew {
+  @for $idx from 0 through 6 {
+    $value: $idx * 2;
+
+    &-x-#{$value} {
+      transform: skewX(#{$value}deg);
+    }
+    &-y-#{$value} {
+      transform: skewY(#{$value}deg);
+    }
+  }
+}

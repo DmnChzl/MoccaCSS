@@ -1,0 +1,22 @@
+@import "../breakpoints";
+
+@mixin each-flex-direction {
+  @each $direction in row, column, row-reverse, column-reverse {
+    &-#{$direction} {
+      display: flex;
+      flex-direction: $direction;
+    }
+  }
+}
+
+.flex {
+  @include each-flex-direction;
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:flex {
+      @include each-flex-direction;
+    }
+  }
+}

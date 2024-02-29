@@ -1,0 +1,29 @@
+@import "../breakpoints";
+
+@mixin grid-gap {
+  @for $idx from 0 through 16 {
+    $gap: $idx * 0.25;
+
+    &-#{$idx} {
+      gap: #{$gap}rem;
+    }
+    &-x-#{$idx} {
+      column-gap: #{$gap}rem;
+    }
+    &-y-#{$idx} {
+      row-gap: #{$gap}rem;
+    }
+  }
+}
+
+.gap {
+  @include grid-gap;
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:gap {
+      @include grid-gap;
+    }
+  }
+}

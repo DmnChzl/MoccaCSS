@@ -1,0 +1,23 @@
+@import "../breakpoints";
+
+@mixin rotate-deg {
+  @for $idx from 0 through 12 {
+    $value: $idx * 15;
+
+    &-#{$value} {
+      transform: rotate(#{$value}deg);
+    }
+  }
+}
+
+.rotate {
+  @include rotate-deg;
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:rotate {
+      @include rotate-deg;
+    }
+  }
+}

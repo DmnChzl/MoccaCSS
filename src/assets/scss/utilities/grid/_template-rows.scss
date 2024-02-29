@@ -1,0 +1,11 @@
+.grid-rows {
+  &-none {
+    grid-template-rows: none;
+  }
+
+  @for $idx from 1 through 12 {
+    &-#{$idx} {
+      grid-template-rows: repeat($idx, minmax(0, 1fr));
+    }
+  }
+}

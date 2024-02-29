@@ -1,0 +1,17 @@
+.letter {
+  &-extra-small {
+    letter-spacing: -0.05rem;
+  }
+  &-small {
+    letter-spacing: -0.025rem;
+  }
+  &-medium {
+    letter-spacing: 0rem;
+  }
+  &-large {
+    letter-spacing: 0.025rem;
+  }
+  &-extra-large {
+    letter-spacing: 0.05rem;
+  }
+}

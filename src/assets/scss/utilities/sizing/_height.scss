@@ -1,0 +1,50 @@
+@use "sass:math";
+
+.h {
+  &-auto {
+    height: auto;
+  }
+  &-view {
+    height: 100vh;
+  }
+  &-1\/1 {
+    height: 100%;
+  }
+
+  @for $idx from 0 through 64 {
+    $height: $idx * 0.25;
+
+    &-#{$idx} {
+      height: #{$height}rem;
+    }
+  }
+
+  @for $b from 2 through 6 {
+    @for $a from 1 through $b - 1 {
+      $height: math.div($a, $b) * 100;
+
+      &-#{$a}\/#{$b} {
+        height: #{$height} + "%";
+      }
+    }
+  }
+}
+
+.min-h {
+  @for $idx from 0 through 64 {
+    $height: $idx * 0.25;
+
+    &-#{$idx} {
+      min-height: #{$height}rem;
+    }
+  }
+}
+.max-h {
+  @for $idx from 0 through 64 {
+    $height: $idx * 0.25;
+
+    &-#{$idx} {
+      max-height: #{$height}rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.duration {
+  &-125 {
+    transition-duration: 125ms;
+  }
+
+  @for $idx from 0 through 6 {
+    $duration: $idx * 250;
+
+    &-#{$duration} {
+      transition-duration: #{$duration}ms;
+    }
+  }
+}

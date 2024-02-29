@@ -1,0 +1,7 @@
+.flow {
+  @each $flow in row, column {
+    &-#{$flow} {
+      grid-auto-flow: $flow;
+    }
+  }
+}

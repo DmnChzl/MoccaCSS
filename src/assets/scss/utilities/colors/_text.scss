@@ -1,0 +1,16 @@
+@import "./vars";
+
+@each $tint, $color in $colors {
+  .text-#{$tint} {
+    color: $color;
+  }
+  .hover\:text-#{$tint}:hover {
+    color: $color;
+  }
+  .focus\:text-#{$tint}:focus {
+    color: $color;
+  }
+  .disabled\:text-#{$tint}:disabled {
+    color: $color;
+  }
+}

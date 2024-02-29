@@ -1,0 +1,23 @@
+.column {
+  &-auto {
+    grid-column: auto;
+  }
+  &-start-auto {
+    grid-column-start: auto;
+  }
+  &-end-auto {
+    grid-column-end: auto;
+  }
+
+  @for $idx from 1 through 12 {
+    &-#{$idx} {
+      grid-column: span $idx / span $idx;
+    }
+    &-start-#{$idx} {
+      grid-column-start: $idx;
+    }
+    &-end-#{$idx} {
+      grid-column-end: $idx;
+    }
+  }
+}

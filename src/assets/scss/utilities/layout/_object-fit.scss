@@ -1,0 +1,7 @@
+.object {
+  @each $object-fit in contain, cover, fill, none, scale-down {
+    &-#{$object-fit} {
+      object-fit: $object-fit;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.z {
+  @for $idx from 0 through 20 {
+    $value: $idx * 5;
+
+    &-#{$value} {
+      z-index: $value;
+    }
+  }
+}

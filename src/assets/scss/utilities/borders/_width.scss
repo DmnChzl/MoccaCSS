@@ -1,0 +1,59 @@
+.border {
+  border-width: 1px;
+
+  @for $idx from 0 through 4 {
+    $width: $idx * 2;
+
+    &-#{$width} {
+      border-width: #{$width}px;
+    }
+  }
+}
+
+.border-top {
+  border-top-width: 1px;
+
+  @for $idx from 0 through 4 {
+    $width: $idx * 2;
+
+    &-#{$width} {
+      border-top-width: #{$width}px;
+    }
+  }
+}
+
+.border-right {
+  border-right-width: 1px;
+
+  @for $idx from 0 through 4 {
+    $width: $idx * 2;
+
+    &-#{$width} {
+      border-right-width: #{$width}px;
+    }
+  }
+}
+
+.border-bottom {
+  border-bottom-width: 1px;
+
+  @for $idx from 0 through 4 {
+    $width: $idx * 2;
+
+    &-#{$width} {
+      border-bottom-width: #{$width}px;
+    }
+  }
+}
+
+.border-left {
+  border-left-width: 1px;
+
+  @for $idx from 0 through 4 {
+    $width: $idx * 2;
+
+    &-#{$width} {
+      border-left-width: #{$width}px;
+    }
+  }
+}

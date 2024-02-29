@@ -1,0 +1,13 @@
+.delay {
+  &-125 {
+    transition-delay: 125ms;
+  }
+
+  @for $idx from 0 through 6 {
+    $delay: $idx * 250;
+
+    &-#{$delay} {
+      transition-delay: #{$delay}ms;
+    }
+  }
+}

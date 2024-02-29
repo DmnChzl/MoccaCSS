@@ -1,0 +1,29 @@
+@import "../breakpoints";
+
+.items {
+  &-start {
+    align-items: flex-start;
+  }
+  &-center {
+    align-items: center;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:items {
+      &-start {
+        align-items: flex-start;
+      }
+      &-center {
+        align-items: center;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+    }
+  }
+}

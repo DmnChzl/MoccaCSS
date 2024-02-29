@@ -1,0 +1,92 @@
+name: NodeJS
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  # test:
+  #   name: Unit Testing
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       node-version: ['18.19', '20.11']
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v4
+  #     - name: Use (p)NPM
+  #       uses: pnpm/action-setup@v3
+  #       with:
+  #         version: 8
+  #     - name: Use NodeJS ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  #         cache: "pnpm"
+  #     - name: Install Dependencies
+  #       run: pnpm install
+  #     - name: Unit Testing
+  #       run: pnpm run test
+
+  build:
+    name: Build StyleSheets
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["20.11"]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Use (p)NPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - name: Use NodeJS ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      - name: Install Dependencies
+        run: pnpm install
+      - name: Build StyleSheets
+        run: pnpm run build
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stylesheets
+          path: dist
+
+  publish:
+    name: Publish Library
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["20.11"]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Use (p)NPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - name: Use NodeJS ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: stylesheets
+          path: dist
+      - name: Install Dependencies
+        run: pnpm install
+      - name: Publish Library
+        run: |
+          pnpm pack
+          pnpm publish --access=public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

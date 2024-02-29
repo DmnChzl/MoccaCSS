@@ -1,0 +1,15 @@
+.outline-offset {
+  outline-offset: 1px;
+
+  @for $idx from 0 through 4 {
+    $offset: $idx * 2;
+
+    &-#{$offset} {
+      outline-offset: #{$offset}px;
+
+      &:focus {
+        outline-offset: #{$offset}px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use "sass:map";
+
+$breakpoints: (
+  "small": 640px,
+  "medium": 768px,
+  "large": 1024px,
+  "extra-large": 1280px
+);
+
+@mixin media-min-width($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

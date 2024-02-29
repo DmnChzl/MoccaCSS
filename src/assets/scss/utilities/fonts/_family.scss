@@ -1,0 +1,12 @@
+@import "../font-face";
+
+.font {
+  &-poppins,
+  &-sans {
+    font-family: "Poppins", sans-serif;
+  }
+  &-jetbrains,
+  &-mono {
+    font-family: "JetBrains Mono", monospace;
+  }
+}

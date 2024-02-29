@@ -1,0 +1,11 @@
+@import "./vars";
+
+@each $tint, $color in $colors {
+  .outline-#{$tint} {
+    outline-color: $color;
+
+    &:focus {
+      outline-color: $color;
+    }
+  }
+}
