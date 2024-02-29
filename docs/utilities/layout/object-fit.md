@@ -22,17 +22,17 @@ Below, utility classes to apply `object-fit` property.
 ### Example(s)
 
 <div class="flex-row justify-center radius-8 p-6 mt-8" style="background-color: var(--vp-c-bg-alt);">
-  <picture class="sqrt-64 flex justify-center radius-4" style="background-color: var(--vp-c-bg);">
+  <div class="w-64 flex justify-center radius-4" style="background-color: var(--vp-c-bg);">
     <source srcset="/mocca.avif" type="image/avif" />
     <source srcset="/mocca.webp" type="image/webp" />
-    <img class="w-48 h-64 object-contain" src="/mocca.webp" />
-  </picture>
+    <img class="h-48 object-contain" src="/mocca.webp" />
+  </div>
 </div>
 
 ```html{3}
-<picture class="w-64 h-64 ...">
+<picture class="w-64 ...">
   <!-- <source /> -->
-  <img class="w-48 h-64 object-contain" />
+  <img class="h-48 object-contain" />
 </picture>
 ```
 
@@ -55,14 +55,14 @@ Below, utility classes to apply `object-fit` property.
   <picture class="sqrt-64 flex items-center radius-4" style="background-color: var(--vp-c-bg);">
     <source srcset="/mocca.avif" type="image/avif" />
     <source srcset="/mocca.webp" type="image/webp" />
-    <img class="w-64 h-48 object-fit" src="/mocca.webp" />
+    <img class="w-64 h-48 object-fill" src="/mocca.webp" />
   </picture>
 </div>
 
 ```html{3}
 <picture class="w-64 h-64 ...">
   <!-- <source /> -->
-  <img class="w-64 h-48 object-fit" />
+  <img class="w-64 h-48 object-fill" />
 </picture>
 ```
 
