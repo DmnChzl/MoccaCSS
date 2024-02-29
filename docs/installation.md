@@ -45,7 +45,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <div className="flex-column gap-y-4 p-4">
-    <div className="flex-row justify-around font-monospace">
+    <div className="flex-row justify-around font-mono">
       <div className="h-24 w-16 bg-gray-400 radius-2">Portait</div>
       <div className="sqrt-20 bg-gray-500 radius-4">Square</div>
       <div className="h-16 w-24 bg-gray-600 radius-8">Landscape</div>
