@@ -85,8 +85,6 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
       - name: Publish Library
-        run: |
-          pnpm pack
-          pnpm publish --access=public
+        run: pnpm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
