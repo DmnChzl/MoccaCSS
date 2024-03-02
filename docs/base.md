@@ -24,8 +24,8 @@ Partly import stylesheets into your project.
 import "./modern-normalize.css";
 
 import "@dmnchzl/mocca-css/colors";
-import "@dmnchzl/mocca-css/fonts";
 import "@dmnchzl/mocca-css/flex";
+import "@dmnchzl/mocca-css/fonts";
 import "@dmnchzl/mocca-css/sizing";
 import "@dmnchzl/mocca-css/spacing";
 ```

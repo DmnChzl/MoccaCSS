@@ -7,7 +7,7 @@ settings:
 devDependencies:
   '@dmnchzl/mocca-css':
     specifier: latest
-    version: 0.1.0
+    version: 0.1.1
   chalk:
     specifier: ~5.3.0
     version: 5.3.0
@@ -196,8 +196,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@dmnchzl/mocca-css@0.1.0:
-    resolution: {integrity: sha512-H15dAIvMIuGIcumU1ye8EUPjGgDbdaA3adXLKkidUTeUVOu8dFZFFRkmhzl5ESUgDNpBQ5QT8N48cu0A9Ve/bw==}
+  /@dmnchzl/mocca-css@0.1.1:
+    resolution: {integrity: sha512-wyUFY/LGEOsIUqjMtoRKkJkLU2heGKW2xQGB8KMqi7nd1P3KNQsVgF5o9oFY9cx0xYXggiqjJsGvuvzkInyGYg==}
     engines: {node: '>=18.19.0'}
     dev: true
 

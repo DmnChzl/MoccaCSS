@@ -4,7 +4,7 @@
 
 Strongly influenced by [UnoCSS](https://unocss.dev) and [TailwindCSS](https://tailwindcss.com) before that, **Mocca (S)CSS** is a library with no (or little) visual identity, which doesn't provide any out-of-the-box components; just a ton of atomic classes to focus on the template and business logic, rather than the style....
 
-**Mocca (S)CSS** doesn't claim to be lighter (even if it is 😼) or more efficient than TailwindCSS etc.... It's simply a possibility of what you can do by yourself!
+**Mocca (S)CSS** doesn't claim to be lighter (even if it is 😼) or more efficient than TailwindCSS etc.... It's just different, or simply a possibility of what you can do by yourself!
 
 According to [Brad Frost](https://atomicdesign.bradfrost.com)'s atomic model, the scope of **Mocca (S)CSS** covers the "Atoms" part and suggests a standard/convention of what "Ions" or "Design Tokens" should be.
 

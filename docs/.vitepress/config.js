@@ -13,7 +13,7 @@ export default defineConfig({
     nav: [
       { text: "Guide", link: "/installation" },
       { text: "Docs", link: "/base" },
-      { text: "v0.1.0", link: "//www.npmjs.com/package/@dmnchzl/mocca-css", target: "_blank", rel: "noreferrer" }
+      { text: "v0.1.1", link: "//www.npmjs.com/package/@dmnchzl/mocca-css", target: "_blank", rel: "noreferrer" }
     ],
     sidebar: [
       {
