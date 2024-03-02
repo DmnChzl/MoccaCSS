@@ -16,6 +16,8 @@ Below, utility classes to apply `width` and `height` properties.
 | Class           | Properties                                                 |
 | :-------------- | :--------------------------------------------------------- |
 | .sqrt-`<value>` | `width: #{$value * 0.25}rem; height: #{$value * 0.25}rem;` |
+| .sqrt-96        | `width: 24rem; height: 24rem; /* 384px */`                 |
+| .sqrt-128       | `width: 24rem; height: 32rem; /* 512px */`                 |
 
 ### Example(s)
 

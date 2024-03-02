@@ -7,4 +7,13 @@
       height: #{$value}rem;
     }
   }
+
+  &-96 {
+    width: 24rem;
+    height: 24rem;
+  }
+  &-128 {
+    width: 32rem;
+    height: 32rem;
+  }
 }

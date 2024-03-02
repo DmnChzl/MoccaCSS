@@ -18,6 +18,8 @@ Below, utility classes to apply `width` property.
 | .w-auto      | `width: auto;`                |
 | .w-view      | `width: 100vw;`               |
 | .w-`<value>` | `width: #{$value * 0.25}rem;` |
+| .w-96        | `width: 24rem; /* 384px */`   |
+| .w-128       | `width: 32rem; /* 512px */`   |
 | .w-1/1       | `width: 100%;`                |
 | .w-1/2       | `width: 50%;`                 |
 | .w-1/3       | `width: 33.333%;`             |

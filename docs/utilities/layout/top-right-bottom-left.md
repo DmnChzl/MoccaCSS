@@ -9,16 +9,19 @@ next:
 
 # Top / Right / Left / Bottom
 
-Below, utility classes to apply `top`, `right`, `bottom` or `left` property.
+Below, utility classes to apply `inset`, `top`, `right`, `bottom` or `left` property.
 
 > @for `$value` from 0 through 16
 
-| Class             | Properties                     |
-| :---------------- | :----------------------------- |
-| .top-`<value>`    | `top: #{$value * 0.25}rem;`    |
-| .right-`<value>`  | `right: #{$value * 0.25}rem;`  |
-| .bottom-`<value>` | `bottom: #{$value * 0.25}rem;` |
-| .left-`<value>`   | `left: #{$value * 0.25}rem;`   |
+| Class              | Properties                                               |
+| :----------------- | :------------------------------------------------------- |
+| .inset-`<value>`   | `inset: #{$value * 0.25}rem;`                            |
+| .inset-x-`<value>` | `left: #{$value * 0.25}rem; right: #{$value * 0.25}rem;` |
+| .inset-y-`<value>` | `top: #{$value * 0.25}rem; bottom: #{$value * 0.25}rem;` |
+| .top-`<value>`     | `top: #{$value * 0.25}rem;`                              |
+| .right-`<value>`   | `right: #{$value * 0.25}rem;`                            |
+| .bottom-`<value>`  | `bottom: #{$value * 0.25}rem;`                           |
+| .left-`<value>`    | `left: #{$value * 0.25}rem;`                             |
 
 ### Example(s)
 

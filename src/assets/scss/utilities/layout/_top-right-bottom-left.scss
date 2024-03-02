@@ -1,6 +1,18 @@
 @for $idx from 0 through 16 {
   $value: $idx * 0.25;
 
+  .inset-#{$idx} {
+    inset: #{$value}rem;
+  }
+  .inset-x-#{$idx} {
+    left: #{$value}rem;
+    right: #{$value}rem;
+  }
+  .inset-y-#{$idx} {
+    top: #{$value}rem;
+    bottom: #{$value}rem;
+  }
+
   .top-#{$idx} {
     top: #{$value}rem;
   }

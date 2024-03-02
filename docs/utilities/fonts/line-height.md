@@ -11,28 +11,28 @@ next:
 
 Below, utility classes to apply `font-size` and `line-height` properties.
 
-| Class             | Properties            |
-| :---------------- | :-------------------- |
-| .line-extra-small | `line-height: 1.25;`  |
-| .line-small       | `line-height: 1.375;` |
-| .line-medium      | `line-height: 1.5;`   |
-| .line-large       | `line-height: 1.625;` |
-| .line-extra-large | `line-height: 1.75;`  |
+| Class                | Properties            |
+| :------------------- | :-------------------- |
+| .leading-extra-small | `line-height: 1.25;`  |
+| .leading-small       | `line-height: 1.375;` |
+| .leading-medium      | `line-height: 1.5;`   |
+| .leading-large       | `line-height: 1.625;` |
+| .leading-extra-large | `line-height: 1.75;`  |
 
 ### Example(s)
 
 <div class="flex-column gap-y-2 radius-8 px-6 py-4 mt-8" style="background-color: var(--vp-c-bg-alt);">
-  <span class="line-extra-small">Lorem ipsum dolor sit amet...</span>
-  <span class="line-small">Lorem ipsum dolor sit amet...</span>
-  <span class="line-medium">Lorem ipsum dolor sit amet...</span>
-  <span class="line-large">Lorem ipsum dolor sit amet...</span>
-  <span class="line-extra-large">Lorem ipsum dolor sit amet...</span>
+  <span class="leading-extra-small">Lorem ipsum dolor sit amet...</span>
+  <span class="leading-small">Lorem ipsum dolor sit amet...</span>
+  <span class="leading-medium">Lorem ipsum dolor sit amet...</span>
+  <span class="leading-large">Lorem ipsum dolor sit amet...</span>
+  <span class="leading-extra-large">Lorem ipsum dolor sit amet...</span>
 </div>
 
 ```html
-<p class="line-extra-small">Lorem ipsum dolor sit amet...</p>
-<p class="line-small">Lorem ipsum dolor sit amet...</p>
-<p class="line-medium">Lorem ipsum dolor sit amet...</p>
-<p class="line-large">Lorem ipsum dolor sit amet...</p>
-<p class="line-extra-large">Lorem ipsum dolor sit amet...</p>
+<p class="leading-extra-small">Lorem ipsum dolor sit amet...</p>
+<p class="leading-small">Lorem ipsum dolor sit amet...</p>
+<p class="leading-medium">Lorem ipsum dolor sit amet...</p>
+<p class="leading-large">Lorem ipsum dolor sit amet...</p>
+<p class="leading-extra-large">Lorem ipsum dolor sit amet...</p>
 ```

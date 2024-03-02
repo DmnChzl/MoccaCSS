@@ -1,6 +1,6 @@
 {
   "name": "@dmnchzl/mocca-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unopinionated x Utility First CSS Library",
   "author": "Damien Chazoule <dmnchzl@pm.me>",
   "repository": "https://github.com/dmnchzl/moccacss.git",

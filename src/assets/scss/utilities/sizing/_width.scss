@@ -19,6 +19,13 @@
     }
   }
 
+  &-96 {
+    width: 24rem;
+  }
+  &-128 {
+    width: 32rem;
+  }
+
   @for $b from 2 through 6 {
     @for $a from 1 through $b - 1 {
       $width: math.div($a, $b) * 100;
@@ -38,6 +45,13 @@
       min-width: #{$width}rem;
     }
   }
+
+  &-96 {
+    min-width: 24rem;
+  }
+  &-128 {
+    min-width: 32rem;
+  }
 }
 .max-w {
   @for $idx from 0 through 64 {
@@ -46,5 +60,12 @@
     &-#{$idx} {
       max-width: #{$width}rem;
     }
+  }
+
+  &-96 {
+    max-width: 24rem;
+  }
+  &-128 {
+    max-width: 32rem;
   }
 }

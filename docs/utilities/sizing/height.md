@@ -18,6 +18,8 @@ Below, utility classes to apply `height` property.
 | .h-auto      | `height: auto;`                |
 | .h-view      | `height: 100vh;`               |
 | .h-`<value>` | `height: #{$value * 0.25}rem;` |
+| .h-96        | `height: 24rem; /* 384px */`   |
+| .h-128       | `height: 32rem; /* 512px */`   |
 | .h-1/1       | `height: 100%;`                |
 | .h-1/2       | `height: 50%;`                 |
 | .h-1/3       | `height: 33.333%;`             |
