@@ -1,3 +1,5 @@
+@import "../breakpoints";
+
 .overflow {
   @each $overflow in hidden, auto, scroll, visible {
     &-#{$overflow} {
@@ -8,6 +10,24 @@
     }
     &-y-#{$overflow} {
       overflow-y: $overflow;
+    }
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:overflow {
+      @each $overflow in hidden, auto, scroll, visible {
+        &-#{$overflow} {
+          overflow: $overflow;
+        }
+        &-x-#{$overflow} {
+          overflow-x: $overflow;
+        }
+        &-y-#{$overflow} {
+          overflow-y: $overflow;
+        }
+      }
     }
   }
 }

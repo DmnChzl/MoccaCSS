@@ -62,3 +62,11 @@ Below, utility classes to apply `justify-content` property.
   <div class="sqrt-12 ...">3</div>
 </div>
 ```
+
+## Media Queries
+
+`justify-content` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="justify-start medium:justify-center extra-large:justify-end">...</div>
+```

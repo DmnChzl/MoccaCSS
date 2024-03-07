@@ -46,3 +46,11 @@ Below, utility classes to apply `transform` property.
 <div class="rotate-75 ..."></div>
 <div class="rotate-90 ..."></div>
 ```
+
+## Media Queries
+
+`transform: rotate()` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<svg class="small:rotate-45 medium:rotate-90 large:rotate-135 extra-large:rotate-180">...</svg>
+```

@@ -1,29 +1,12 @@
+@import "../pseudo-classes";
 @import "./vars";
 
 @each $tint, $color in $colors {
-  .fill-#{$tint} {
-    fill: $color;
-  }
-  .hover\:fill-#{$tint}:hover {
-    fill: $color;
-  }
-  .focus\:fill-#{$tint}:focus {
-    fill: $color;
-  }
-  .disabled\:fill-#{$tint}:disabled {
+  @include pseudo-classes-wrapper(fill-#{$tint}) {
     fill: $color;
   }
 
-  .stroke-#{$tint} {
-    stroke: $color;
-  }
-  .hover\:stroke-#{$tint}:hover {
-    stroke: $color;
-  }
-  .focus\:stroke-#{$tint}:focus {
-    stroke: $color;
-  }
-  .disabled\:stroke-#{$tint}:disabled {
+  @include pseudo-classes-wrapper(stroke-#{$tint}) {
     stroke: $color;
   }
 }

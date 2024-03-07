@@ -32,3 +32,11 @@ Below, utility classes to apply `color` property.
 <p class="text-green-500">Lorem ipsum dolor sit amet...</p>
 <p class="text-indigo-500">Lorem ipsum dolor sit amet...</p>
 ```
+
+## Pseudo Classes
+
+`color` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<button class="text-indigo-500 hover:text-indigo-600 focus:text-indigo-700 disabled:text-indigo-300">...</button>
+```

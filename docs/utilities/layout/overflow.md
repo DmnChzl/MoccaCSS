@@ -25,3 +25,11 @@ Below, utility classes to apply `overflow` property.
 | .overflow-y-auto    | `overflow-y: auto;`    |
 | .overflow-y-scroll  | `overflow-y: scroll;`  |
 | .overflow-y-visible | `overflow-y: visible;` |
+
+## Media Queries
+
+`overflow` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="overflow-x-hidden overflow-y-scroll small:overflow-x-scroll small:overflow-y-hidden">...</div>
+```

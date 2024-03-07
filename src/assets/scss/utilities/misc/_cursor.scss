@@ -1,11 +1,7 @@
 .cursor {
-  &-auto {
-    cursor: auto;
-  }
-  &-default {
-    cursor: default;
-  }
-  &-pointer {
-    cursor: pointer;
+  @each $pointer in auto, default, pointer, wait, text, move, not-allowed, progress, grab, grabbing {
+    &-#{$pointer} {
+      cursor: $pointer;
+    }
   }
 }

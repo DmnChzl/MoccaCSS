@@ -96,3 +96,11 @@ Below, utility classes to apply `max-height` property.
 | Class            | Properties                         |
 | :--------------- | :--------------------------------- |
 | .max-h-`<value>` | `max-height: #{$value * 0.25}rem;` |
+
+## Media Queries
+
+`height` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="h-1/1 small:h-1/4 medium:h-1/2 large:h-3/4">...</div>
+```

@@ -72,3 +72,11 @@ Below, utility classes to apply `padding`, `padding-top`, `padding-right`, `padd
   <div class="sqrt-12">4</div>
 </div>
 ```
+
+## Media Queries
+
+`padding`, `padding-top`, `padding-right`, `padding-bottom` and `padding-left` are supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="py-4 small:py-8 medium:py-auto">...</div>
+```

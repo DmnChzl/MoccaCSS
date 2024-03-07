@@ -1,4 +1,6 @@
-.opacity {
+@import "../pseudo-classes";
+
+@include pseudo-classes-wrapper(opacity) {
   @for $idx from 0 through 20 {
     $key: $idx * 5;
     $value: $idx * 0.05;

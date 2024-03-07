@@ -1,7 +1,21 @@
+@import "../breakpoints";
+
 .flow {
   @each $flow in row, column {
     &-#{$flow} {
       grid-auto-flow: $flow;
+    }
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:flow {
+      @each $flow in row, column {
+        &-#{$flow} {
+          grid-auto-flow: $flow;
+        }
+      }
     }
   }
 }

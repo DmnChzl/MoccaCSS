@@ -24,3 +24,16 @@ Below, utility classes to apply `display` property.
 | .grid         | `display: grid;`         |
 | .inline-grid  | `display: inline-grid;`  |
 | .contents     | `display: contents;`     |
+
+## Media Queries
+
+`display` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="block small:hidden">
+  <span>That's Mobile View</span>
+</div>
+<div class="hidden small:block">
+  <span>That's Desktop View</span>
+</div>
+```

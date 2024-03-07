@@ -52,3 +52,11 @@ Below, utility classes to apply `opacity` property.
 <div class="opacity-75 ..."></div>
 <div class="opacity-100 ..."></div>
 ```
+
+## Pseudo Classes
+
+`opacity` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<button class="opacity-75 hover:opacity-100 focus:opacity-100 disabled:opacity-50">...</button>
+```

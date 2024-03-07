@@ -41,3 +41,11 @@ Below, utility classes to apply `grid-row`, `grid-row-start` or `grid-row-end` p
   <div class="w-1/1 h-12 ...">5</div>
 </div>
 ```
+
+## Media Queries
+
+`grid-row`, `grid-row-start` and `grid-row-end` are supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="small:row-4 medium:row-3 large:row-2">...</div>
+```

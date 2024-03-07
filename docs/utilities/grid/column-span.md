@@ -41,3 +41,11 @@ Below, utility classes to apply `grid-column`, `grid-column-start` or `grid-colu
   <div class="w-1/1 h-12 ...">5</div>
 </div>
 ```
+
+## Media Queries
+
+`grid-column`, `grid-column-start` and `grid-column-end` are supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="small:column-4 medium:column-6 large:column-8">...</div>
+```

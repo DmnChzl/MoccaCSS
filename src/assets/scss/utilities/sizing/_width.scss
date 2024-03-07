@@ -1,6 +1,7 @@
 @use "sass:math";
+@import "../breakpoints";
 
-.w {
+@mixin each-width {
   &-auto {
     width: auto;
   }
@@ -37,6 +38,10 @@
   }
 }
 
+.w {
+  @include each-width;
+}
+
 .min-w {
   @for $idx from 0 through 64 {
     $width: $idx * 0.25;
@@ -67,5 +72,13 @@
   }
   &-128 {
     max-width: 32rem;
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:w {
+      @include each-width;
+    }
   }
 }

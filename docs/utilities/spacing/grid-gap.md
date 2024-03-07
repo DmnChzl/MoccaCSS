@@ -74,3 +74,11 @@ Below, utility classes to apply `gap`, `column-gap` or `row-gap` property.
   <div class="w-1/1 h-12 ..."></div>
 </div>
 ```
+
+## Media Queries
+
+`gap`, `column-gap` and `row-gap` are supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="gap-y-4 small:gap-x-4 small:gap-y-0 medium:gap-x-8">...</div>
+```

@@ -1,0 +1,13 @@
+$states: hover, focus, disabled;
+
+@mixin pseudo-classes-wrapper($classname) {
+  .#{$classname} {
+    @content;
+  }
+
+  @each $state in $states {
+    .#{$state}\:#{$classname}:#{$state} {
+      @content;
+    }
+  }
+}

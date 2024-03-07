@@ -11,8 +11,15 @@ next:
 
 Below, utility classes to apply `cursor` property.
 
-| Class           | Properties         |
-| :-------------- | :----------------- |
-| .cursor-auto    | `cursor: auto;`    |
-| .cursor-default | `cursor: default;` |
-| .cursor-pointer | `cursor: pointer;` |
+| Class               | Properties             |
+| :------------------ | :--------------------- |
+| .cursor-auto        | `cursor: auto;`        |
+| .cursor-default     | `cursor: default;`     |
+| .cursor-pointer     | `cursor: pointer;`     |
+| .cursor-wait        | `cursor: wait;`        |
+| .cursor-text        | `cursor: text;`        |
+| .cursor-move        | `cursor: move;`        |
+| .cursor-not-allowed | `cursor: not-allowed;` |
+| .cursor-progress    | `cursor: progress;`    |
+| .cursor-grab        | `cursor: grab;`        |
+| .cursor-grabbing    | `cursor: grabbing;`    |

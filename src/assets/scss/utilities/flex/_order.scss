@@ -1,3 +1,5 @@
+@import "../breakpoints";
+
 .order {
   &-first {
     order: -9999;
@@ -9,6 +11,25 @@
   @for $idx from 0 through 16 {
     &-#{$idx} {
       order: $idx;
+    }
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:order {
+      &-first {
+        order: -9999;
+      }
+      &-last {
+        order: 9999;
+      }
+
+      @for $idx from 0 through 16 {
+        &-#{$idx} {
+          order: $idx;
+        }
+      }
     }
   }
 }

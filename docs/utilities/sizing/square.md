@@ -56,3 +56,11 @@ Below, utility classes to apply `width` and `height` properties.
   </div>
 </div>
 ```
+
+## Media Queries
+
+`width` and `height` are supported by changing state on-the-fly! You can use it like this:
+
+```html
+<svg class="sqrt-24 medium:sqrt-48 extra-large:sqrt-96">...</svg>
+```

@@ -53,6 +53,32 @@ Below, utility classes to apply `border-top-left-radius` and `border-top-right-r
 | .radius-top-8   | `border-top-left-radius: 8px; border-top-right-radius: 8px;`       |
 | .radius-top-max | `border-top-left-radius: 9999px; border-top-right-radius: 9999px;` |
 
+### Top-Left
+
+Below, utility classes to apply `border-top-left-radius` property.
+
+| Class                | Properties                        |
+| :------------------- | :-------------------------------- |
+| .radius-top-left-0   | `border-top-left-radius: 0px;`    |
+| .radius-top-left-2   | `border-top-left-radius: 2px;`    |
+| .radius-top-left-4   | `border-top-left-radius: 4px;`    |
+| .radius-top-left-6   | `border-top-left-radius: 6px;`    |
+| .radius-top-left-8   | `border-top-left-radius: 8px;`    |
+| .radius-top-left-max | `border-top-left-radius: 9999px;` |
+
+### Top-Right
+
+Below, utility classes to apply `border-top-right-radius` property.
+
+| Class                 | Properties                         |
+| :-------------------- | :--------------------------------- |
+| .radius-top-right-0   | `border-top-right-radius: 0px;`    |
+| .radius-top-right-2   | `border-top-right-radius: 2px;`    |
+| .radius-top-right-4   | `border-top-right-radius: 4px;`    |
+| .radius-top-right-6   | `border-top-right-radius: 6px;`    |
+| .radius-top-right-8   | `border-top-right-radius: 8px;`    |
+| .radius-top-right-max | `border-top-right-radius: 9999px;` |
+
 ## Right
 
 Below, utility classes to apply `border-top-right-radius` and `border-bottom-right-radius` properties.
@@ -78,6 +104,32 @@ Below, utility classes to apply `border-bottom-left-radius` and `border-bottom-r
 | .radius-bottom-6   | `border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;`       |
 | .radius-bottom-8   | `border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;`       |
 | .radius-bottom-max | `border-bottom-left-radius: 9999px; border-bottom-right-radius: 9999px;` |
+
+### Bottom-Left
+
+Below, utility classes to apply `border-bottom-left-radius` property.
+
+| Class                   | Properties                           |
+| :---------------------- | :----------------------------------- |
+| .radius-bottom-left-0   | `border-bottom-left-radius: 0px;`    |
+| .radius-bottom-left-2   | `border-bottom-left-radius: 2px;`    |
+| .radius-bottom-left-4   | `border-bottom-left-radius: 4px;`    |
+| .radius-bottom-left-6   | `border-bottom-left-radius: 6px;`    |
+| .radius-bottom-left-8   | `border-bottom-left-radius: 8px;`    |
+| .radius-bottom-left-max | `border-bottom-left-radius: 9999px;` |
+
+### Bottom-Right
+
+Below, utility classes to apply `border-bottom-right-radius` property.
+
+| Class                    | Properties                            |
+| :----------------------- | :------------------------------------ |
+| .radius-bottom-right-0   | `border-bottom-right-radius: 0px;`    |
+| .radius-bottom-right-2   | `border-bottom-right-radius: 2px;`    |
+| .radius-bottom-right-4   | `border-bottom-right-radius: 4px;`    |
+| .radius-bottom-right-6   | `border-bottom-right-radius: 6px;`    |
+| .radius-bottom-right-8   | `border-bottom-right-radius: 8px;`    |
+| .radius-bottom-right-max | `border-bottom-right-radius: 9999px;` |
 
 ## Left
 

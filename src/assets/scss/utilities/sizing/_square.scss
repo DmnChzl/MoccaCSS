@@ -1,3 +1,5 @@
+@import "../breakpoints";
+
 .sqrt {
   @for $idx from 0 through 64 {
     $value: $idx * 0.25;
@@ -15,5 +17,29 @@
   &-128 {
     width: 32rem;
     height: 32rem;
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:sqrt {
+      @for $idx from 0 through 64 {
+        $value: $idx * 0.25;
+
+        &-#{$idx} {
+          width: #{$value}rem;
+          height: #{$value}rem;
+        }
+      }
+
+      &-96 {
+        width: 24rem;
+        height: 24rem;
+      }
+      &-128 {
+        width: 32rem;
+        height: 32rem;
+      }
+    }
   }
 }

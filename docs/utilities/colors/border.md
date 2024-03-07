@@ -32,3 +32,14 @@ Below, utility classes to apply `border-color` property.
 <div class="border-2 border-solid border-green-500 ..."></div>
 <div class="border-2 border-solid border-indigo-500 ..."></div>
 ```
+
+## Pseudo Classes
+
+`border-color` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<button
+  class="border-2 border-solid border-indigo-500 hover:border-indigo-600 focus:border-indigo-700 disabled:border-indigo-300">
+  ...
+</button>
+```

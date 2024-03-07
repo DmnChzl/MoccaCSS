@@ -1,4 +1,6 @@
-.column {
+@import "../breakpoints";
+
+@mixin each-grid-column {
   &-auto {
     grid-column: auto;
   }
@@ -18,6 +20,18 @@
     }
     &-end-#{$idx} {
       grid-column-end: $idx;
+    }
+  }
+}
+
+.column {
+  @include each-grid-column;
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:column {
+      @include each-grid-column;
     }
   }
 }

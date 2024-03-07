@@ -60,3 +60,11 @@ Below, utility classes to apply `align-items` property.
   <div class="sqrt-12 ...">3</div>
 </div>
 ```
+
+## Media Queries
+
+`align-items` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="items-start medium:items-center extra-large:items-end">...</div>
+```

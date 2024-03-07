@@ -58,3 +58,12 @@ Below, utility classes to apply `fill` and `stroke` properties.
 <svg class="stroke-green-500 ..." fill="currentColor"></svg>
 <svg class="stroke-indigo-500 ..." fill="currentColor"></svg>
 ```
+
+## Pseudo Classes
+
+`fill` and `stroke` are supported by changing state on-the-fly! You can use it like this:
+
+```html
+<svg class="fill-indigo-500 hover:fill-indigo-600 focus:fill-indigo-700 disabled:fill-indigo-300">...</svg>
+<svg class="stroke-indigo-500 hover:stroke-indigo-600 focus:stroke-indigo-700 disabled:stroke-indigo-300">...</svg>
+```

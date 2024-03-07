@@ -32,3 +32,11 @@ Below, utility classes to apply `align-self` property.
   <div class="sqrt-12 self-end ...">3</div>
 </div>
 ```
+
+## Media Queries
+
+`align-self` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="self-start medium:self-center extra-large:self-end">...</div>
+```

@@ -75,3 +75,11 @@ Below, utility classes to apply `display` and `flex-direction` properties.
   <div class="sqrt-12 ...">3</div>
 </div>
 ```
+
+## Media Queries
+
+`flex-direction` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="flex-column small:flex-row">...</div>
+```

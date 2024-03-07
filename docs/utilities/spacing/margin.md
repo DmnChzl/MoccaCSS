@@ -79,3 +79,11 @@ Below, utility classes to apply `margin`, `margin-top`, `margin-right`, `margin-
   <div class="sqrt-12 ml-12 ...">4</div>
 </div>
 ```
+
+## Media Queries
+
+`margin`, `margin-top`, `margin-right`, `margin-bottom` and `margin-left` are supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="mx-4 small:mx-8 medium:mx-auto">...</div>
+```

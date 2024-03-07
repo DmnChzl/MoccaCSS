@@ -32,3 +32,11 @@ Below, utility classes to apply `background-color` property.
 <div class="bg-green-500 ..."></div>
 <div class="bg-indigo-500 ..."></div>
 ```
+
+## Pseudo Classes
+
+`background-color` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<button class="bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700 disabled:bg-indigo-300">...</button>
+```

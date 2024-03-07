@@ -38,3 +38,11 @@ Below, utility classes to apply `order` property.
   <div class="sqrt-12 order-4 ...">5</div>
 </div>
 ```
+
+## Media Queries
+
+`order` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="order-last small:order-first">...</div>
+```

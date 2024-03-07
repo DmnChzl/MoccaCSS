@@ -1,6 +1,6 @@
 {
   "name": "@dmnchzl/mocca-css",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Unopinionated x Utility First CSS Library",
   "author": "Damien Chazoule <dmnchzl@pm.me>",
   "repository": "https://github.com/dmnchzl/moccacss.git",
@@ -47,8 +47,8 @@
     "lint-staged": "~15.2.0",
     "prettier": "~3.2.5",
     "sass": "~1.71.0",
-    "vite": "~5.1.0",
-    "vitepress": "~1.0.0-rc.40"
+    "vite": "~5.1.5",
+    "vitepress": "~1.0.0-rc.45"
   },
   "lint-staged": {
     "docs/**/*.md": "prettier --write",

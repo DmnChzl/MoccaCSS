@@ -96,3 +96,11 @@ Below, utility classes to apply `max-width` property.
 | Class            | Properties                        |
 | :--------------- | :-------------------------------- |
 | .max-w-`<value>` | `max-width: #{$value * 0.25}rem;` |
+
+## Media Queries
+
+`width` is supported by changing state on-the-fly! You can use it like this:
+
+```html
+<div class="w-1/1 small:w-3/4 medium:w-1/2 large:w-1/4">...</div>
+```

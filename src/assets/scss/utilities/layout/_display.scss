@@ -1,8 +1,23 @@
+@import "../breakpoints";
+
 .hidden {
   display: none;
 }
 @each $display in inline, block, inline-block, flex, inline-flex, table, inline-table, grid, inline-grid, contents {
   .#{$display} {
     display: $display;
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:hidden {
+      display: none;
+    }
+    @each $display in inline, block, inline-block, flex, inline-flex, table, inline-table, grid, inline-grid, contents {
+      .#{$key}\:#{$display} {
+        display: $display;
+      }
+    }
   }
 }

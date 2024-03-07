@@ -1,6 +1,7 @@
 @use "sass:math";
+@import "../breakpoints";
 
-.h {
+@mixin each-height {
   &-auto {
     height: auto;
   }
@@ -37,6 +38,10 @@
   }
 }
 
+.h {
+  @include each-height;
+}
+
 .min-h {
   @for $idx from 0 through 64 {
     $height: $idx * 0.25;
@@ -67,5 +72,13 @@
   }
   &-128 {
     max-height: 32rem;
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include media-min-width($value) {
+    .#{$key}\:h {
+      @include each-height;
+    }
   }
 }
