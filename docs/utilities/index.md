@@ -29,3 +29,22 @@ import "@dmnchzl/mocca-css/spacing";
 import "@dmnchzl/mocca-css/transforms";
 import "@dmnchzl/mocca-css/transitions";
 ```
+
+## Pseudo Classes / Media Queries
+
+Some properties are supported by changing state on-the-fly! Here is their reference:
+
+| Class         | Pseudo Class |
+| :------------ | :----------- |
+| .hover:`*`    | `:hover`     |
+| .focus:`*`    | `:focus`     |
+| .disabled:`*` | `:disabled`  |
+
+Some properties are supported by changing breakpoint on-the-fly! Here is their reference:
+
+| Class            | Media Query                  |
+| :--------------- | :--------------------------- |
+| .small:`*`       | `@media (min-width: 640px)`  |
+| .medium:`*`      | `@media (min-width: 768px)`  |
+| .large:`*`       | `@media (min-width: 1024px)` |
+| .extra-large:`*` | `@media (min-width: 1280px)` |
