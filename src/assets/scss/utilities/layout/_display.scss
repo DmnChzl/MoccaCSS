@@ -1,4 +1,4 @@
-@import "../breakpoints";
+@use "../breakpoints" as b;
 
 .hidden {
   display: none;
@@ -9,8 +9,8 @@
   }
 }
 
-@each $key, $value in $breakpoints {
-  @include media-min-width($value) {
+@each $key, $value in b.$breakpoints {
+  @include b.media-min-width($value) {
     .#{$key}\:hidden {
       display: none;
     }

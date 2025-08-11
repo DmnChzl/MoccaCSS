@@ -1,4 +1,4 @@
-@import "../breakpoints";
+@use "../breakpoints" as b;
 
 @mixin each-grid-column {
   &-auto {
@@ -28,8 +28,8 @@
   @include each-grid-column;
 }
 
-@each $key, $value in $breakpoints {
-  @include media-min-width($value) {
+@each $key, $value in b.$breakpoints {
+  @include b.media-min-width($value) {
     .#{$key}\:column {
       @include each-grid-column;
     }

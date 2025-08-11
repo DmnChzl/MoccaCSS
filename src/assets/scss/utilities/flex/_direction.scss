@@ -1,4 +1,4 @@
-@import "../breakpoints";
+@use "../breakpoints" as b;
 
 @mixin each-flex-direction {
   @each $direction in row, column, row-reverse, column-reverse {
@@ -13,8 +13,8 @@
   @include each-flex-direction;
 }
 
-@each $key, $value in $breakpoints {
-  @include media-min-width($value) {
+@each $key, $value in b.$breakpoints {
+  @include b.media-min-width($value) {
     .#{$key}\:flex {
       @include each-flex-direction;
     }

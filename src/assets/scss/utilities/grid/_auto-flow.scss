@@ -1,4 +1,4 @@
-@import "../breakpoints";
+@use "../breakpoints" as b;
 
 .flow {
   @each $flow in row, column {
@@ -8,8 +8,8 @@
   }
 }
 
-@each $key, $value in $breakpoints {
-  @include media-min-width($value) {
+@each $key, $value in b.$breakpoints {
+  @include b.media-min-width($value) {
     .#{$key}\:flow {
       @each $flow in row, column {
         &-#{$flow} {

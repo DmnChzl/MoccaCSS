@@ -1,4 +1,4 @@
-@import "../breakpoints";
+@use "../breakpoints" as b;
 
 .overflow {
   @each $overflow in hidden, auto, scroll, visible {
@@ -14,8 +14,8 @@
   }
 }
 
-@each $key, $value in $breakpoints {
-  @include media-min-width($value) {
+@each $key, $value in b.$breakpoints {
+  @include b.media-min-width($value) {
     .#{$key}\:overflow {
       @each $overflow in hidden, auto, scroll, visible {
         &-#{$overflow} {

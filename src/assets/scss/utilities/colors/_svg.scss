@@ -1,12 +1,12 @@
-@import "../pseudo-classes";
-@import "./vars";
+@use "../pseudo-classes" as pc;
+@use "./vars" as v;
 
-@each $tint, $color in $colors {
-  @include pseudo-classes-wrapper(fill-#{$tint}) {
+@each $tint, $color in v.$colors {
+  @include pc.pseudo-classes-wrapper(fill-#{$tint}) {
     fill: $color;
   }
 
-  @include pseudo-classes-wrapper(stroke-#{$tint}) {
+  @include pc.pseudo-classes-wrapper(stroke-#{$tint}) {
     stroke: $color;
   }
 }

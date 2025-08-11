@@ -1,6 +1,6 @@
-@import "./vars";
+@use "./vars" as v;
 
-@each $tint, $color in $colors {
+@each $tint, $color in v.$colors {
   .border-#{$tint} {
     border-color: $color;
   }
